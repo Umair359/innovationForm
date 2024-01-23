@@ -296,9 +296,31 @@
     width: 80%;
   }
 
-  .home-right > div > p {
-    font-size: 16px;
-    width: 80%;
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about > div {
+    width: 100vw;
+    height: fit-content;
+  }
+  .about > div h3 {
+    height: fit-content;
+    font-size: 20px;
+  }
+  .about > div p {
+    font-size: 13px;
+  }
+  .about > div > div:nth-child(3) {
+    margin-top: 20px;
+  }
+  .footer h3 {
+    font-size: 20px;
+  }
+  .about img {
+    width: 100px;
   }
 }
 
@@ -314,6 +336,14 @@
   .header > img {
     width: 250px;
     margin-left: 10px;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .home > div {
+    width: 100vw;
+    padding: 30px 0;
+    height: 400px;
   }
 
   .home-left > div > h3 {
@@ -358,6 +388,7 @@
   }
 }
 
+/*About Page*/
 .about-us {
   width: 1600px;
   margin: auto;
@@ -460,6 +491,47 @@
 @media (max-width: 1450px) {
   .about-us {
     width: 1200px;
+  }
+}
+@media (max-width: 1250px) {
+  .about-us {
+    width: 950px;
+  }
+  .about-us h2 {
+    font-size: 30px;
+  }
+  .about-us h3 {
+    font-size: 30px !important;
+  }
+  .about-us h5 {
+    font-size: 26px !important;
+  }
+  .about-us p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .about-us {
+    width: 700px;
+    flex-direction: column;
+  }
+  .about-us-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .about-us {
+    width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .about-us {
+    width: 300px;
+  }
+  .about-us div {
+    width: 300px !important;
   }
 }
 

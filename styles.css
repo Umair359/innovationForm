@@ -274,7 +274,7 @@
   }
 
   .home {
-    height: 450px;
+    height: fit-content !important;
   }
 
   .home-left > div > h3 {
